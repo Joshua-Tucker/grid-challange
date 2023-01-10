@@ -65,20 +65,34 @@ main{
         align-items:center;
     }
 
-    .s-i-c{
+    .s-i-c {
         display:grid;
-        grid-template-areas: 
-        "s-i-c s-i-c"
-        "s-i-c s-i-c";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "a b"
+        "a c";
+        grid-gap: 0px 60px;
+    }
+       
+    
+      .a {
+        grid-area: a;
+        height:100%;
+        width: 100%;
+      }
+
+      .b{
+        grid-area: b;
+        height:100%;
+        width: 100%;
+      }
       
-    }
+      .c{
+        grid-area: c;
+        height:100%;
+        width: 100%;
+      }
 
-    .s-i-c img{
-
-    height:auto;
-    width: 100%;
-
-    }
+   
 }
