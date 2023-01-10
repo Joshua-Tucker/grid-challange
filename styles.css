@@ -29,6 +29,8 @@ nav{
 
 main{
     margin: 40px;
+    height:auto;
+
 }
 
 .container{
@@ -37,6 +39,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .container img{
@@ -65,7 +68,7 @@ main{
         align-items:center;
     }
 
-    .s-i-c {
+    .m-i-c{
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -73,26 +76,55 @@ main{
         "a b"
         "a c";
         grid-gap: 0px 60px;
+        height:33%;
+    
+
+    }
+
+    .a{
+        grid-area: a;
+    }
+    .b{
+        grid-area: b;
+    }
+    .s-i-c {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "c d"
+        "c e";
+        grid-gap: 0px 60px;
+        height:33%;
+
+       
     }
        
-    
-      .a {
-        grid-area: a;
-        height:100%;
-        width: 100%;
-      }
-
-      .b{
-        grid-area: b;
-        height:100%;
-        width: 100%;
-      }
-      
-      .c{
+      .c {
         grid-area: c;
-        height:100%;
-        width: 100%;
       }
-
-   
+      .d{
+        grid-area: d;
+      }
+      .e{
+        grid-area: e;
+        }
+        
+        .t-i-c {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr ;
+            grid-template-areas: 
+            "f g";
+            grid-gap: 0px 60px;
+            height:33%;
+             
+        } 
+        
+            .f{
+                grid-area: f
+            }
+            .g{
+                grid-area: g
+            }
 }
